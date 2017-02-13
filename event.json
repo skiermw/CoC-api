@@ -1,0 +1,28 @@
+{
+  "events": [
+	{
+		  "name": "Awards Banquet",
+		  "date": "6/10/17",
+		  "startTime": "18:00",
+          "endTime": "22:00",
+		  "location": "Grand Ballroom",
+		  "maximumGuests": "400"
+    },
+    {
+		  "name": "Snorkeling1",
+		  "date": "6/10/17",
+		  "startTime": "8:00",
+          "endTime": "12:30",
+		  "location": "Marina",
+		  "maximumGuests": "75"
+    },
+    {
+		  "name": "Spa1",
+		  "date": "6/10/17",
+		  "startTime": "8:00",
+          "endTime": "9:30",
+		  "location": "Spa",
+		  "maximumGuests": "8"
+    }
+  ]
+}

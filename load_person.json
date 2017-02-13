@@ -1,0 +1,28 @@
+{
+  "attendees": [
+	  {
+		  "firstName": "Nancy",
+		  "middleName": "Sue",
+		  "lastName": "Allison",
+		  "type": "Agent",
+		  "guest": {
+			  "firstName": "Vance",
+			  "middleName": "R",
+			  "lastName": "Allison",
+			  "typeGuest": "Spouse"
+		  }
+	  },
+	  {
+		  "firstName": "Tina",
+		  "middleName": "Marie",
+		  "lastName": "Workman",
+		  "type": "Officer",
+		  "guest": {
+			  "firstName": "Mark",
+			  "middleName": "",
+			  "lastName": "Workman",
+			  "typeGuest": "Spouse"
+		  }
+	  }
+  ]
+}
