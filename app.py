@@ -3,14 +3,19 @@ from chalicelib import manage_graph
 app = Chalice(app_name='coc-api')
 app.debug = True
 
+graph = manage_graph.initialize_db()
 #graph = manage_graph.initialize_db()
-
 @app.route('/')
 def index():
-    graph = manage_graph.initialize_db()
+    return "Conference of Champions API"
 
-    return manage_graph.get_json_attendee_schedule('MarkWorkman')
+@app.route('/coc/api/v1.0/schedule/{attendee}')
+def schedule(attendee):
+    return manage_graph.get_json_attendee_schedule(attendee)
 
+@app.route('/coc/api/v1.0/attendees')
+def schedule():
+    return manage_graph.get_json_attendees()
 
 # The view function above will return {"hello": "world"}
 # whenever you make an HTTP GET request to '/'.

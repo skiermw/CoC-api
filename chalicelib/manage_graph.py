@@ -68,6 +68,8 @@ def get_attendee_schedule(attendee):
 def get_json_attendee_schedule(attendee):
     return graph.data("MATCH (p:Person)-[:ATTENDING]->(e:Event) WHERE p.fullname = '%s' RETURN e.name as name" % attendee)
 
+def get_json_attendees():
+    return graph.data("MATCH (p:Person) RETURN p.fullname as fullname")
 
 def main():
     #global graph
