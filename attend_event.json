@@ -1,0 +1,36 @@
+{
+  "schedulings": [
+	{
+		  "eventName": "Awards Banquet",
+		  "attendeeName": "NancySueAllison"
+    },
+    {
+		  "eventName": "Awards Banquet",
+		  "attendeeName": "VanceRAllison"
+    },
+    {
+		  "eventName": "Snorkeling1",
+		  "attendeeName": "VanceRAllison"
+    },
+    {
+		  "eventName": "Spa1",
+		  "attendeeName": "NancySueAllison"
+    },
+    {
+		  "eventName": "Awards Banquet",
+		  "attendeeName": "TinaMarieWorkman"
+    },
+    {
+		  "eventName": "Spa1",
+		  "attendeeName": "TinaMarieWorkman"
+    },
+    {
+		  "eventName": "Awards Banquet",
+		  "attendeeName": "MarkWorkman"
+    },
+    {
+		  "eventName": "Snorkeling1",
+		  "attendeeName": "MarkWorkman"
+    }
+  ]
+}
