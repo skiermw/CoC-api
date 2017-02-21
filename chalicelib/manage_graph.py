@@ -12,13 +12,33 @@ def initialize_db():
     graph = Graph(host="54.173.217.208", password="hyenas")
     return graph
 
-def add_person(fname, mname, lname, typePerson):
+def add_person(person_json):
     person = Person()
-    person.fname = fname
-    person.mname = mname
-    person.lname = lname
-    person.fullname = person.fname + person.mname + person.lname
-    person.type = typePerson
+    #  all attendees have these
+    person.firstName = person_json['firstName']
+    person.middleName = person_json['middleName']
+    person.lastName = person_json['lastName']
+    person.type = person_json['type']
+    person.perferredName = person_json['preferredName']
+    person.birthDate = person_json['birthDate']
+    person.cellPhone = person_json['cellPhone']
+    person.fullName = person.firstName + person.middleName + person.lastName + birthDate
+    #  Agent only
+    if 'agentNumber' in person_json:
+        person.agentNumber = person_json['agentNumber']
+    #  Agent / DSM / RSM
+    if 'stateNumber' in person_json:
+        person.stateNumber = person_json['stateNumber']
+        person.districtNumber = person_json['districtNumber']
+    #  Officer
+    if 'title' in person_json:
+        person.title = person_json['title']
+        person.department = person_json['department']
+    #  Agent / DSM / RSM / Officer
+    if 'city' in person_json:
+        person.city = person_json['city']
+        person.state = person_json['state']
+
     graph.push(person)
     return person
 
@@ -57,12 +77,6 @@ def add_participant(participant_json):
 
 def get_attendee_schedule(attendee):
     person = Person.select(graph, attendee).first()
-
-    '''
-    print("%s's schedule" % person.fullname)
-    for event in person.attending:
-        print("  %s" % event.name)
-    '''
     return json.loads(person.fullname)
 
 def get_json_attendee_schedule(attendee):
@@ -76,46 +90,13 @@ def main():
     #graph = Graph(password="hyenas")
     initialize_db()
     #read_invitee_json()
-    #read_events_json()
+    read_events_json()
 
     #read_attend_event_json()
 
-    get_attendee_schedule('MarkWorkman')
-    print('Attendees who are guests: ')
-    for person in Person.select(graph).where("_.type = 'Guest'"):
-        print("  " + person.fname + " " + person.lname)
-    '''
-    mark = Person()
-    mark.fname = "Mark"
-    mark.mname = ""
-    mark.lname = "Workman"
-    mark.fullname = mark.fname+mark.mname+mark.lname
+    #get_attendee_schedule('MarkWorkman')
 
-    tina = Person()
-    tina.fname = "Tina"
-    tina.mname = "Marie"
-    tina.lname = "Workman"
-    tina.fullname = tina.fname + tina.mname + tina.lname
 
-    mark.guest_of.add(tina, type="Spouse")
-
-    awards = Event()
-    awards.name = "Awards Banquet"
-    awards.date = "6/10/2017"
-    awards.startTime = "18:30"
-
-    mark.attending.add(awards)
-    tina.attending.add(awards)
-
-    graph.push(tina)
-    graph.push(mark)
-
-    found = Person.select(graph, "TinaMarieWorkman").first()
-    print(found.fname + " " + found.lname)
-
-    for person in Person.select(graph).where("_.lname =~ 'W.*'"):
-        print(person.fname + " " + person.lname)
-    '''
 # Start program
 if __name__ == "__main__":
    main()

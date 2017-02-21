@@ -1,28 +1,228 @@
 {
   "events": [
-	{
+    {
+      "name": "Awards Reception",
+      "date": "6/10/17",
+      "startTime": 1800,
+      "endTime": 1900,
+      "location": "Haleakala Gardens",
+      "maximumGuests": "400"
+    },
+    {
 		  "name": "Awards Banquet",
 		  "date": "6/10/17",
-		  "startTime": "18:00",
-          "endTime": "22:00",
-		  "location": "Grand Ballroom",
+		  "startTime": 1900,
+      "endTime": 2200,
+		  "location": "Haleakala Ballroom",
 		  "maximumGuests": "400"
     },
     {
-		  "name": "Snorkeling1",
-		  "date": "6/10/17",
-		  "startTime": "8:00",
-          "endTime": "12:30",
-		  "location": "Marina",
-		  "maximumGuests": "75"
+		  "name": "Business Meeting",
+		  "date": "6/13/17",
+		  "startTime": 800,
+      "endTime": 900,
+		  "location": "Haleakala Ballroom Section 4 and 5",
+		  "maximumGuests": "200"
     },
     {
 		  "name": "Spa1",
 		  "date": "6/10/17",
-		  "startTime": "8:00",
-          "endTime": "9:30",
+		  "startTime": 800,
+      "endTime": 900,
 		  "location": "Spa",
 		  "maximumGuests": "8"
+    },
+    {
+		  "name": "Golf Wailea Blue",
+		  "date": "6/10/17",
+		  "startTime": 630,
+      "endTime": 1300,
+		  "location": "Clubhouse",
+		  "maximumGuests": "72"
+    },
+    {
+		  "name": "Golf Wailea Emerald",
+		  "date": "6/101/17",
+		  "startTime": 630,
+      "endTime": 1300,
+		  "location": "Clubhouse",
+		  "maximumGuests": "72"
+    },
+    {
+		  "name": "Golf Wailea Gold",
+		  "date": "6/12/17",
+		  "startTime": 630,
+      "endTime": 1300,
+		  "location": "Clubhouse",
+		  "maximumGuests": "72"
+    },
+    {
+		  "name": "Haleakala Downhill Biking1",
+		  "date": "6/10/17",
+		  "startTime": 600,
+      "endTime": 1430,
+		  "location": "Mt. Haleakala",
+		  "maximumGuests": "62"
+    },
+    {
+		  "name": "Haleakala Downhill Biking2",
+		  "date": "6/11/17",
+		  "startTime": 600,
+      "endTime": 1430,
+		  "location": "Mt. Haleakala",
+		  "maximumGuests": "62"
+    },
+    {
+		  "name": "Haleakala Downhill Biking3",
+		  "date": "6/12/17",
+		  "startTime": 600,
+      "endTime": 1430,
+		  "location": "Mt. Haleakala",
+		  "maximumGuests": "62"
+    },
+    {
+		  "name": "Kayaking1",
+		  "date": "6/10/17",
+		  "startTime": 800,
+      "endTime": 1130,
+		  "location": "Southshore",
+		  "maximumGuests": "62"
+    },
+    {
+		  "name": "Kayaking2",
+		  "date": "6/11/17",
+		  "startTime": 800,
+      "endTime": 1130,
+		  "location": "Southshore",
+		  "maximumGuests": "62"
+    },
+    {
+		  "name": "Kayaking3",
+		  "date": "6/12/17",
+		  "startTime": 800,
+      "endTime": 1130,
+		  "location": "Southshore",
+		  "maximumGuests": "62"
+    },
+    {
+		  "name": "Snorkeling1",
+		  "date": "6/10/17",
+		  "startTime": 645,
+      "endTime": 1130,
+		  "location": "Molokini Crater",
+		  "maximumGuests": "62"
+    },
+    {
+		  "name": "Snorkeling2",
+		  "date": "6/11/17",
+		  "startTime": 645,
+      "endTime": 1130,
+		  "location": "Molokini Crater",
+		  "maximumGuests": "62"
+    },
+    {
+		  "name": "Snorkeling3",
+		  "date": "6/12/17",
+		  "startTime": 645,
+      "endTime": 1130,
+		  "location": "Molokini Crater",
+		  "maximumGuests": "62"
+    },
+    {
+		  "name": "Ocean Gear Pass1",
+		  "date": "6/10/17",
+		  "startTime": 700,
+      "endTime": 1700,
+		  "location": "Aqalani Beach",
+		  "maximumGuests": "62"
+    },
+    {
+		  "name": "Ocean Gear Pass2",
+		  "date": "6/11/17",
+		  "startTime": 700,
+      "endTime": 1700,
+		  "location": "Aqalani Beach",
+		  "maximumGuests": "62"
+    },
+    {
+		  "name": "Ocean Gear Pass3",
+		  "date": "6/11/17",
+		  "startTime": 700,
+      "endTime": 1700,
+		  "location": "Aqalani Beach",
+		  "maximumGuests": "62"
+    },
+    {
+		  "name": "Zipline Tour1",
+		  "date": "6/10/17",
+		  "startTime": 700,
+      "endTime": 900,
+		  "location": "Haleakala",
+		  "maximumGuests": "62"
+    },
+    {
+		  "name": "Zipline Tour2",
+		  "date": "6/10/17",
+		  "startTime": 800,
+      "endTime": 1000,
+		  "location": "Haleakala",
+		  "maximumGuests": "62"
+    },
+    {
+		  "name": "Zipline Tour3",
+		  "date": "6/10/17",
+		  "startTime": 900,
+      "endTime": 1100,
+		  "location": "Haleakala",
+		  "maximumGuests": "62"
+    },
+    {
+		  "name": "Zipline Tour4",
+		  "date": "6/11/17",
+		  "startTime": 700,
+      "endTime": 900,
+		  "location": "Haleakala",
+		  "maximumGuests": "62"
+    },
+    {
+		  "name": "Zipline Tour5",
+		  "date": "6/11/17",
+		  "startTime": 800,
+      "endTime": 1000,
+		  "location": "Haleakala",
+		  "maximumGuests": "62"
+    },
+    {
+		  "name": "Zipline Tour6",
+		  "date": "6/11/17",
+		  "startTime": 900,
+      "endTime": 1100,
+		  "location": "Haleakala",
+		  "maximumGuests": "62"
+    },
+    {
+		  "name": "Zipline Tour7",
+		  "date": "6/12/17",
+		  "startTime": 700,
+      "endTime": 900,
+		  "location": "Haleakala",
+		  "maximumGuests": "62"
+    },
+    {
+		  "name": "Zipline Tour8",
+		  "date": "6/12/17",
+		  "startTime": 800,
+      "endTime": 1000,
+		  "location": "Haleakala",
+		  "maximumGuests": "62"
+    },
+    {
+		  "name": "Zipline Tour9",
+		  "date": "6/12/17",
+		  "startTime": 900,
+      "endTime": 1100,
+		  "location": "Haleakala",
+		  "maximumGuests": "62"
     }
   ]
 }
