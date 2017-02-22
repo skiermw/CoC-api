@@ -2,23 +2,28 @@
   "attendees": [
 	  {
 		  "firstName": "Nancy",
-		  "middleName": "Sue",
+		  "middleName": "",
 		  "lastName": "Allison",
       "preferredName": "Nancy Allison",
 		  "type": "Agent",
       "agentNumber": "A12122",
       "birthDate": "01/12/1960",
       "cellPhone": "5734239999",
-		  "guest": {
-			  "firstName": "Vance",
-			  "middleName": "R",
-			  "lastName": "Allison",
-        "preferredName": "Vance Allison",
-        "birthDate": "07/23/1958",
-        "type": "Guest",
-			  "typeGuest": "Spouse"
-		  }
+      "agentNumber": "D460",
+      "stateNumber": "24",
+      "districtNumber": "40",
+      "city": "Columbia",
+      "state": "MO"
 	  },
+    {
+      "firstName": "Vance",
+      "middleName": "R",
+      "lastName": "Allison",
+      "preferredName": "Vance Allison",
+      "birthDate": "07/23/1958",
+      "type": "Guest",
+      "typeGuest": "Spouse"
+    },
 	  {
 		  "firstName": "Tina",
 		  "middleName": "Marie",

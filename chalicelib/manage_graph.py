@@ -12,6 +12,9 @@ def initialize_db():
     graph = Graph(host="54.173.217.208", password="hyenas")
     return graph
 
+def get_person(person_key):
+    return Person.select(graph, '%s').first() %person_key
+
 def add_person(person_json):
     person = Person()
     #  all attendees have these
@@ -22,7 +25,7 @@ def add_person(person_json):
     person.perferredName = person_json['preferredName']
     person.birthDate = person_json['birthDate']
     person.cellPhone = person_json['cellPhone']
-    person.fullName = person.firstName + person.middleName + person.lastName + birthDate
+    person.fullName = person.firstName + person.middleName + person.lastName
     #  Agent only
     if 'agentNumber' in person_json:
         person.agentNumber = person_json['agentNumber']
