@@ -5,14 +5,25 @@ from py2neo.ogm import GraphObject,Property, RelatedFrom, RelatedTo
 
 
 class Person(GraphObject):
-    'base OMG class for Person'
-    __primarykey__ = "fullname"
+    'base OMG class for Person(attendee)'
+    __primarykey__ = "fullName"
 
-    fname = Property()
-    mname = Property()
-    lname = Property()
-    fullname = Property()
+    firstName = Property()
+    middleName = Property()
+    lastName = Property()
+    preferredName = Property()
+    fullName = Property()
     type = Property()
+    birthDate = Property()
+    cellPhone = Property()
+    email = Property()
+    agentNumber = Property()
+    stateNumber = Property()
+    districtNumber = Property()
+    city = Property()
+    state = Property()
+    title = Property()
+    department = Property()
 
     guest_of = RelatedTo("Person")
     guest = RelatedFrom("Person", "GUEST_OF")
@@ -31,5 +42,3 @@ class Event(GraphObject):
     maximum_guests = Property()
 
     attendees = RelatedFrom("Person", "ATTENDING")
-
-
