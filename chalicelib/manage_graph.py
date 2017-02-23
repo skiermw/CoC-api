@@ -50,27 +50,14 @@ def add_person(person_json):
     graph.push(person)
     return person
 
-def add_guest(guest, type_guest, invitee_key):
+def add_guest(guest_obj, typeGuest, invitee_key):
+    #print('add_guest %s %s %s' % (guest_obj.fullName, typeGuest, invitee_key))
     invitee = Person.select(graph, invitee_key).first()
-    guest.guest_of.add(invitee, type=type_guest)
-    graph.push(guest)
-'''
-def add_invitee(invitee_json):
-    invitee_obj = add_person(invitee_json['firstName'],
-                             invitee_json['middleName'],
-                             invitee_json['lastName'],
-                             invitee_json['type'])
-    if 'guest' in invitee_json:
-        guest_obj = add_person(invitee_json['guest']['firstName'],
-                               invitee_json['guest']['middleName'],
-                               invitee_json['guest']['lastName'], 'Guest')
-        guest_obj.guest_of.add(invitee_obj, type=invitee_json['guest']['typeGuest'])
-        graph.push(guest_obj)
-'''
-
+    guest_obj.guest_of.add(invitee, type=typeGuest)
+    graph.push(guest_obj)
 
 def add_participant(participant_json):
-    print(participant_json['attendeeName'] + " " + participant_json['eventName'])
+    #print(participant_json['attendeeName'] + " " + participant_json['eventName'])
     person = Person.select(graph, participant_json['attendeeName']).first()
     event = Event.select(graph, participant_json['eventName']).first()
     person.attending.add(event)

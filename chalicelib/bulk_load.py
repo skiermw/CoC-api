@@ -16,8 +16,8 @@ def read_invitee_json():
         attendee_json = json.load(attendee_file)
         for invitee in attendee_json['attendees']:
             person = add_person(invitee)
-            if 'guestOf' in attendee_json:
-                add_guest(person, attendee_json['type_guest'], attendee_json['guestOf'])
+            if 'guestOf' in invitee:
+                add_guest(person, invitee['typeGuest'], invitee['guestOf'])
 
 
 def read_attend_event_json():
