@@ -1,47 +1,50 @@
 {
   "attendees": [
-	  {
-		  "firstName": "Nancy",
-		  "middleName": "",
-		  "lastName": "Allison",
-      "preferredName": "Nancy Allison",
-		  "type": "Agent",
-      "agentNumber": "A12122",
-      "birthDate": "01/12/1960",
-      "cellPhone": "5734239999",
+	{
+	  "firstName": "Nancy",
+	  "middleName": "",
+	  "lastName": "Allison",
+	  "type": "Agent",
       "agentNumber": "D460",
       "stateNumber": "24",
       "districtNumber": "40",
       "city": "Columbia",
       "state": "MO"
-	  },
+	},
     {
       "firstName": "Vance",
       "middleName": "R",
       "lastName": "Allison",
-      "preferredName": "Vance Allison",
       "birthDate": "07/23/1958",
       "type": "Guest",
-      "typeGuest": "Spouse"
+      "typeGuest": "Spouse",
+	  "guestOf": "NancyAllison"
     },
-	  {
-		  "firstName": "Tina",
-		  "middleName": "Marie",
-		  "lastName": "Workman",
-      "preferredName": "Tina Workman",
-		  "type": "Officer",
+	{
+	  "firstName": "Tina",
+	  "lastName": "Workman",
+	  "type": "Officer",
       "title": "Vice President of Accounting",
-      "birthDate": "09/25/1969",
-      "cellPhone": "5738230850",
-		  "guest": {
-			  "firstName": "Mark",
-			  "middleName": "",
-			  "lastName": "Workman",
-        "preferredName": "Mark Workman",
-        "birthDate": "09/03/1961",
-        "type": "Guest",
-			  "typeGuest": "Spouse"
-		  }
-	  }
+	  "city": "Columbia",
+      "state": "MO"
+	},
+	{
+	  "firstName": "Mark",
+	  "middleName": "",
+	  "lastName": "Workman",
+	  "type": "Guest",
+	  "typeGuest": "Spouse",
+	  "guestOf": "TinaWorkman"
+	},
+	{
+	  "firstName": "Bobby",
+	  "middleName": "",
+	  "lastName": "Dingus",
+	  "type": "RSM",
+      "stateNumber": "03",
+      "districtNumber": "0003",
+      "city": "Benton",
+      "state": "AR"
+	}
   ]
 }

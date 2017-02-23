@@ -20,6 +20,7 @@ class Person(GraphObject):
     agentNumber = Property()
     stateNumber = Property()
     districtNumber = Property()
+    firstTimer = Property()
     city = Property()
     state = Property()
     title = Property()

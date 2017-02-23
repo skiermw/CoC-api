@@ -1,5 +1,5 @@
 
-from manage_graph import add_invitee, add_person, add_event, add_participant, initialize_db
+from manage_graph import add_guest, add_person, add_event, add_participant, initialize_db
 import json
 
 
@@ -15,7 +15,10 @@ def read_invitee_json():
     with open(filename) as attendee_file:
         attendee_json = json.load(attendee_file)
         for invitee in attendee_json['attendees']:
-            add_invitee(invitee)
+            person = add_person(invitee)
+            if 'guestOf' in attendee_json:
+                add_guest(person, attendee_json['type_guest'], attendee_json['guestOf'])
+
 
 def read_attend_event_json():
     filename = "../attend_event.json"

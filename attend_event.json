@@ -2,34 +2,50 @@
   "schedulings": [
 	{
 		  "eventName": "Awards Banquet",
-		  "attendeeName": "NancySueAllison"
+		  "attendeeName": "NancyAllison"
     },
     {
 		  "eventName": "Awards Banquet",
-		  "attendeeName": "VanceRAllison"
+		  "attendeeName": "VanceAllison"
     },
     {
 		  "eventName": "Snorkeling1",
-		  "attendeeName": "VanceRAllison"
+		  "attendeeName": "VanceAllison"
     },
     {
 		  "eventName": "Spa1",
-		  "attendeeName": "NancySueAllison"
+		  "attendeeName": "NancyAllison"
     },
     {
 		  "eventName": "Awards Banquet",
-		  "attendeeName": "TinaMarieWorkman"
+		  "attendeeName": "TinaWorkman"
     },
     {
-		  "eventName": "Spa1",
-		  "attendeeName": "TinaMarieWorkman"
+		  "eventName": "Golf Wailea Blue",
+		  "attendeeName": "TinaWorkman"
+    },
+    {
+		  "eventName": "Kayaking2",
+		  "attendeeName": "TinaWorkman"
+    },
+    {
+		  "eventName": "Haleakala Downhill Biking3",
+		  "attendeeName": "TinaWorkman"
     },
     {
 		  "eventName": "Awards Banquet",
 		  "attendeeName": "MarkWorkman"
     },
     {
-		  "eventName": "Snorkeling1",
+		  "eventName": "Kayaking2",
+		  "attendeeName": "MarkWorkman"
+    },
+    {
+		  "eventName": "Haleakala Downhill Biking3",
+		  "attendeeName": "MarkWorkman"
+    },
+    {
+		  "eventName": "Golf Wailea Blue",
 		  "attendeeName": "MarkWorkman"
     }
   ]
