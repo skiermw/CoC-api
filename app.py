@@ -20,7 +20,7 @@ def attendee(key):
         return manage_graph.add_person(request.json_body)
     elif request.method == 'GET':
         try:
-            return manage_graph.get_person(key)
+            return manage_graph.get_attendee(key)
         except KeyError:
             raise NotFoundError(key)
 

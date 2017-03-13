@@ -72,16 +72,19 @@ def add_event(event_json):
     event.location = event_json['location']
     event.maximum_guests = event_json['maximumGuests']
     graph.push(event)
-
+'''
 def get_attendee_schedule(attendee):
     person = Person.select(graph, attendee).first()
     return json.loads(person.fullname)
-
+'''
 def get_json_attendee_schedule(attendee):
     return graph.data("MATCH (p:Person)-[:ATTENDING]->(e:Event) WHERE p.fullname = '%s' RETURN e.name as name, e.date as date, e.start_time as start_time, e.end_time as end_time, e.location as location order by e.date, e.start_time" % attendee)
 
 def get_json_attendees():
     return graph.data("MATCH (p:Person) RETURN p.firstName as firstName,  p.lastName as lastName, p.type as type")
+
+def get_json_attendee(attendee):
+    return graph.data("MATCH (p:Person) WHERE p.fullname = '%s' RETURN p.firstName as firstName,  p.lastName as lastName, p.type as type" % attendee)
 
 def main():
     #global graph
