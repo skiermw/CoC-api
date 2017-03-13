@@ -84,7 +84,7 @@ def get_json_attendees():
     return graph.data("MATCH (p:Person) RETURN p.firstName as firstName,  p.lastName as lastName, p.type as type")
 
 def get_json_attendee(attendee):
-    return graph.data("MATCH (p:Person) WHERE p.fullname = '%s' RETURN p.firstName as firstName,  p.lastName as lastName, p.type as type" % attendee)
+    return graph.data("MATCH (p:Person) WHERE p.fullName = '%s' RETURN p.firstName as firstName,  p.lastName as lastName, p.type as type" % attendee)
 
 def main():
     #global graph
